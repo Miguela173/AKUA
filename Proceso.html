@@ -6,20 +6,21 @@
 
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
+  
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
 
   <title>BigWing</title>
+  
+ 
 
-  <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
-  <!-- bootstrap core css -->
+  <link rel="stylesheet" href="/css/proceso.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
@@ -41,7 +42,7 @@
             <nav class="navbar navbar-expand-lg custom_nav-container ">
               <a class="navbar-brand" href="index.html">
                 <span>
-                  <img class="uno" src="/images/logo.jpeg" alt="">
+                  <img class="uno" src="/images/logopng white.png" alt="">
                 </span>
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -62,7 +63,7 @@
                       <a class="nav-link" href="Proceso.html">Proceso creativo </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="Proceso.html">Manual De Marca </a>
+                      <a class="nav-link" href=".html">Manual De Marca </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contactanos</a>
@@ -84,110 +85,166 @@
 
   <!-- service section -->
 
-  <section class="service_section">
-    <div class="container">
-      <div class="custom_heading-container">
-        <h2>
-          Proceso Creativo
-        </h2>
-      </div>
-      <div class="service_container layout_padding2">
-        <div class="service_box">
-          <div class="img-box">
-            <img src="images/s-1.jpg" alt="" />
-          </div>
-          <div class="detail-box">
-            <h4>
-              PROBLEMATICA:<br />
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
 
-            </h4>
-            <p>
-              Nuestro proyecto parte de una problemática detectada en la comuna 6 relacionada con el ODS 6, agua limpia
-              y saneamiento , a partir de esto nuestra pregunta problematizadora es ¿De qué manera podemos concientizar
-              a la comunidad para empezar a gestionar de una mejor forma los residuos y la higiene que caen en nuestras
-              quebradas para evitar catástrofes en ellas?
-            </p>
-          </div>
-        </div>
-        <div class="service_box">
-          <div class="img-box">
-            <img src="images/s-2.jpg" alt="" />
-          </div>
-          <div class="detail-box">
-            <h4>
-              PLANTEAMIENTO<br />
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #f8f9fa;
+    }
 
-            </h4>
-            <p>
-              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-              slightly believable. If you are
-            </p>
-          </div>
-        </div>
-        <div class="service_box">
-          <div class="img-box">
-            <img src="images/s-3.jpg" alt="" />
-          </div>
-          <div class="detail-box">
-            <h4>
-              PLANEACIÓN<br />
-            </h4>
-            <p>
-              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-              slightly believable. If you are
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="service_container layout_padding2">
-        <div class="service_box">
-          <div class="img-box">
-            <img src="images/s-1.jpg" alt="" />
-          </div>
-          <div class="detail-box">
-            <h4>
-              OBJETIVO:<br />
+    .card {
+        background-color: #0078d4;
+        border-radius: 10px;
+        padding: 20px;
+        width: 30%;
+        text-align: center;
+    }
 
-            </h4>
-            <p>
-              Queremos proteger las quebradas de la comuna para alcanzar una solución viable sobre la contaminación
-              debido a los desechos que permanecen en estas e inculcar conciencia y responsabilidad ambiental en nuestra
-              comunidad, fomentando prácticas sostenibles y comprometiéndose con la protección y preservación de este
-              recurso natural.
-            </p>
-          </div>
-        </div>
-        <div class="service_box">
-          <div class="img-box">
-            <img src="images/s-2.jpg" alt="" />
-          </div>
-          <div class="detail-box">
-            <h4>
-              MANUAL<br />
+    .icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
 
-            </h4>
-            <p>
-              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-              slightly believable. If you are
-            </p>
-          </div>
-        </div>
-        <div class="service_box">
-          <div class="img-box">
-            <img src="images/s-3.jpg" alt="" />
-          </div>
-          <div class="detail-box">
-            <h4>
-              REDES SOCIALES<br />
-            </h4>
-            <p>
-              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
-              slightly believable. If you are
-            </p>
-            <div>
-              <a href="https://www.instagram.com/akua_2024_?igsh=ZGo1MWd2am9jNWN4">
-                INSTAGRAM
-              </a>
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .cta {
+        color: #0078d4;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .cta:hover {
+        text-decoration: underline;
+    }
+    .service_section {
+    text-align: center;
+    color: #f9fcfb;
+    background-image: url(/images/Formas-web-_2_.png);
+    background-size: 100% 100%;
+    padding-top: 275px;
+    padding-bottom: 125px;
+    background-repeat: no-repeat;
+    margin-top: -150px;
+  }
+</style>
+</head>
+<body>
+<div class="service_section">
+<div class="container">
+    <div class="card">
+        <div class="title">Problematica</div>
+        <div class="description">Nuestro proyecto parte de una problemática detectada en la comuna 6 relacionada con el ODS 6, agua limpia y saneamiento , a partir de esto nuestra pregunta problematizadora es ¿De qué manera podemos concientizar a la comunidad para empezar a gestionar de una mejor forma los residuos y la higiene que caen en nuestras quebradas para evitar catástrofes en ellas?</div>
+        
+    </div>
+
+    <div class="card">
+        
+        <div class="title">Planteamiento</div>
+        <div class="description">Nuestro proyecto se ve enfocado en la ODS 6 agua limpia y saneamiento. Desde nuestra experiencia queremos darle a la comuna 6, la tranquilidad de tener sus cañadas limpias por esto, se pensó en un proyecto que solucione esta problemática. Busca no solo limpiar las cañadas, sino también empoderar a la comunidad para que tome un rol activo en la conservación del medio ambiente.</div>
+        
+    </div>
+
+    <div class="card">
+        <div class="title">Planeación</div>
+        <div class="description">Para iniciar Akua, identificamos una problemática que afecta a los habitantes de la comuna 6: la contaminación de las cañadas. A medida que profundizamos en nuestra investigación, comenzamos a conocer mejor a nuestro público objetivo y sus necesidades específicas. Esto nos permitió diseñar una solución viable que aborda estos desafíos a través de un proyecto de concientización comunitaria.</div>
+     
+    </div>
+</div>
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: white;
+      margin: 0;
+      padding: 0;
+  }
+
+  .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #f8f9fa;
+  }
+
+  .card {
+      background-color: #0078d4;
+      border-radius: 10px;
+      padding: 20px;
+      width: 30%;
+      text-align: center;
+  }
+
+  .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+  }
+
+  .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+  .description {
+      font-size: 16px;
+      margin-bottom: 20px;
+  }
+
+  .cta {
+      color: #0078d4;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  .cta:hover {
+      text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+      
+      <div class="title">Objetivo</div>
+      <div class="description">Queremos proteger las quebradas de la comuna para alcanzar una solución sostenible sobre la contaminación debido a los desechos que permanecen en estas e inculcar conciencia y responsabilidad ambiental en nuestra comunidad. </div>
+      
+  </div>
+
+  <div class="card">
+      
+      <div class="title">Manual</div>
+      <div class="description">Este fue creado para asegurar que las personas que quieran usar nuestro proyecto tengan clara nuestra identidad de marca en el diseño , en el se muestra a detalle las indicaciones correctas e incorrectas de nuestro proyecto para diferentes contextos</div>
+    
+  </div>
+
+  <div class="card">
+     
+      <div class="title">Redes Sociales</div>
+      <div class="description"> Estas fueron implementadas para transmitir información acerca del proyecto y llegar a la mayor cantidad de personas para poder obtener las soluciones que deseamos.                                          Manual de marca: Este fue creado para dar instrucciones acerca de todo el diseño e identidad de marca que tenemos como proyecto para que al ser usado se tenga en cuenta y se respete lo que somos</div>
+      <a href="https://www.instagram.com/akua_2024_?igsh=ZGo1MWd2am9jNWN4" class="cta" style="color: #007BFF;">INSTAGRAM</a>
+  </div>
+</div>
+              
             </div>
           </div>
         </div>
@@ -195,254 +252,31 @@
 
     </div>
   </section>
-
-  <!-- end service section -->
-
-  <div class="footer_bg">
-    <!-- info section -->
-    <section class="info_section layout_padding2-bottom">
-      <div class="container">
-        <h3 class="">
-          BigWing
-        </h3>
+</div>
+  
+<footer class="footer_section">
+  <div class="container-fluid footer_container">
+      <div class="logo">
+          <h1>Tu Empresa</h1>
       </div>
-      <div class="container info_content">
-
-        <div>
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="d-flex">
-                <h5>
-                  Useful Link
-                </h5>
-              </div>
-              <div class="d-flex ">
-                <ul>
-                  <li>
-                    <a href="">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About Departments
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-                <ul class="ml-3 ml-md-5">
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Loram ipusm
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="d-flex">
-                <h5>
-                  The Services
-                </h5>
-              </div>
-              <div class="d-flex ">
-                <ul>
-                  <li>
-                    <a href="">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About Departments
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-                <ul class="ml-3 ml-md-5">
-                  <li>
-                    <a href="">
-                      Lorem ipsum dolor
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      sit amet, consectetur
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      adipiscing elit,
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      sed do eiusmod
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      tempor incididunt
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="d-flex">
-                <h5>
-                  Contact Us
-                </h5>
-              </div>
-              <div class="d-flex ">
-                <ul>
-                  <li>
-                    <a href="">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About Departments
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-                <ul class="ml-3 ml-md-5">
-                  <li>
-                    <a href="">
-                      Lorem ipsum
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      dolor sit amet,
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      consectetur
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      adipiscing
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      elit, sed do eiusmod
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
-          <div class="social-box">
-            <a href="">
-              <img src="images/fb.png" alt="" />
-            </a>
-
-            <a href="">
-              <img src="images/twitter.png" alt="" />
-            </a>
-            <a href="">
-              <img src="images/linkedin1.png" alt="" />
-            </a>
-            <a href="">
-              <img src="images/instagram1.png" alt="" />
-            </a>
-          </div>
-          <div class="form_container mt-5">
-            <form action="">
-              <label for="subscribeMail">
-                Newsletter
-              </label>
-              <input type="email" placeholder="Enter Your email" id="subscribeMail" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
+      <div class="services">
+          <h4>Servicios</h4>
+          <ul>
+              <li><a href="#">Desarrollo Web</a></li>
+              <li><a href="#">Diseño Gráfico</a></li>
+              <li><a href="#">Marketing Digital</a></li>
+              <li><a href="#">Consultoría</a></li>
+              <li><a href="#">Soporte Técnico</a></li>
+          </ul>
       </div>
-
-    </section>
-
-    <!-- end info_section -->
-    <!-- footer section -->
-    <section class="container-fluid footer_section">
-      <p>
-        © 2019 All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </section>
-    <!-- footer section -->
+      <div class="contact">
+          <h4>Contacto</h4>
+          <p>Email: contacto@tuempresa.com</p>
+          <p>Teléfono: +123 456 7890</p>
+          <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+      </div>
   </div>
+</footer>
 
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

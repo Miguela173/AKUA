@@ -319,7 +319,7 @@ a:focus {
 .service_section {
   text-align: center;
   color: #f9fcfb;
-  background-image: url(../images/Fondo1.jpg);
+  background-image: url(/images/Formas-web-_2_.png);
   background-size: 100% 100%;
   padding-top: 275px;
   padding-bottom: 125px;
@@ -593,15 +593,15 @@ a:focus {
           transform: translateY(-7px);
 }
 
-/* info section */
-.footer_bg {
+
+ .footer_bg {
   background-image: url(/images/Footer\ backgroungd.png);
   background-size: cover;
   padding-top: 280px;
   margin-top: -125px;
-  /* background: -webkit-gradient(linear, left top, right top, from(#4d98df), to(#173b67)); */
+   background: -webkit-gradient(linear, left top, right top, from(#4d98df), to(#173b67)); 
 }
-
+ 
 .info_section {
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -705,26 +705,70 @@ a:focus {
 /* end info section */
 /* footer section*/
 .footer_section {
-  font-weight: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: #1b3374; /* Color de fondo */
+  padding: 50px 0;
+  color: #ffffff; /* Texto blanco */
+  border-top-left-radius: 50px; /* Redondear la esquina superior izquierda */
+  position: relative; /* Para usar el pseudo-elemento */
+  overflow: hidden; /* Para ocultar desbordes */
+}
+
+.footer_container {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar el contenido */
+  padding: 0 20px; /* Espaciado lateral */
 }
 
-.footer_section p {
-  color: #f9fcfb;
-  margin: 0;
-  text-align: center;
-  padding: 20px 15%;
-  border-top: 1px solid #f9fcfb;
+.footer_container .logo {
+  margin-bottom: 20px;
 }
 
-.footer_section a {
-  color: #f9fcfb;
+.footer_container h4 {
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
-/* end footer section*/
-/*# sourceMappingURL=style.css.map */
+.footer_container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer_container ul li {
+  margin-bottom: 10px;
+}
+
+.footer_container ul li a {
+  color: #ffffff; /* Enlaces blancos */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer_container ul li a:hover {
+  color: #feb543; /* Color al pasar el mouse */
+}
+
+/* Agregar un pseudo-elemento para crear la curva más pronunciada */
+.footer_section::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Inicia desde la parte superior */
+  left: -70px; /* Desplazamiento hacia la izquierda */
+  width: 150px; /* Aumentar el ancho de la curva */
+  height: 120%; /* Aumentar la altura de la curva para más caída */
+  background-color: #1b3374; /* Mismo color de fondo */
+  border-top-left-radius: 75px; /* Redondear más la esquina */
+  z-index: 0; /* Colocarlo detrás del contenido */
+}
+
+.slider_detail-box {
+  margin-bottom: 50px; /* Ajusta este valor según sea necesario */
+}
+
+
+
+
+
+

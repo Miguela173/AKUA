@@ -1,0 +1,77 @@
+body { 
+    background: -webkit-gradient(linear, left top, right top, from(#4d98df), to(#173b67));
+}
+
+.collage_section { 
+    background: -webkit-gradient(linear, left top, right top, from(#4d98df), to(#173b67));
+}
+
+.service_section {
+    text-align: center;
+    color: #f9fcfb;
+    background-image: url(/images/Formas-web-_2_.png);
+    background-size: 100% 100%;
+    padding-top: 275px;
+    padding-bottom: 125px;
+    background-repeat: no-repeat;
+    margin-top: -150px;
+  }
+
+  .footer_section {
+    background-color: #1b3374; /* Color de fondo */
+    padding: 50px 0;
+    color: #ffffff; /* Texto blanco */
+    border-top-left-radius: 50px; /* Redondear la esquina superior izquierda */
+    position: relative; /* Para usar el pseudo-elemento */
+    overflow: hidden; /* Para ocultar desbordes */
+  }
+  
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 0 20px; /* Espaciado lateral */
+  }
+  
+  .footer_container .logo {
+    margin-bottom: 20px;
+  }
+  
+  .footer_container h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .footer_container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer_container ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer_container ul li a {
+    color: #ffffff; /* Enlaces blancos */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer_container ul li a:hover {
+    color: #feb543; /* Color al pasar el mouse */
+  }
+  
+  /* Agregar un pseudo-elemento para crear la curva más pronunciada */
+  .footer_section::before {
+    content: '';
+    position: absolute;
+    top: 0; /* Inicia desde la parte superior */
+    left: -70px; /* Desplazamiento hacia la izquierda */
+    width: 150px; /* Aumentar el ancho de la curva */
+    height: 120%; /* Aumentar la altura de la curva para más caída */
+    background-color: #1b3374; /* Mismo color de fondo */
+    border-top-left-radius: 75px; /* Redondear más la esquina */
+    z-index: 0; /* Colocarlo detrás del contenido */
+  }
